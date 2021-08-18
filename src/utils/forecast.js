@@ -11,7 +11,7 @@ request({url, json: true}, (error, response,body) => {
     }
     else {
     const current= body.current
-    callback(undefined,current.weather_descriptions[0]+ '. It is currently ' + current.temperature +' degrees out. It feels like ' +current.feelslike +' degrees out')
+    callback(undefined,current.weather_descriptions[0]+ '. It is currently ' + current.temperature +' degrees out. It feels like ' +current.feelslike +' degrees out and humidity is ' + current.humidity)
     }
     } )
 
